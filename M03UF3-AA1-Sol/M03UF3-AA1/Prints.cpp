@@ -1,15 +1,36 @@
 #include "Dictionary.h"
 
-void PrintTitle() {
+bool PrintTitle(short input) {
+	system("cls");
+	//Printear título
 	std::cout << " _____ _         _____             _____         \n";
 	std::cout << "|_   _|_|___ ___|_   _|___ ___ ___|_   _|___ ___ \n";
 	std::cout << "  | | | |  _|___| | | | .'|  _|___| | | | . | -_|\n";
 	std::cout << "  |_| |_|___|     |_| |__,|___|     |_| |___|___|\n";
-	std::cout << "\nPress enter to start\n";
-
-	//Limpia la pantalla si presiona Enter:
-	std::cin.get();
+	
+	//Printear menú
+	std::cout << "\n\t[1] - Nova partida.\n\t[2] - Carregar partida.\n\t[3] - Sortir.\n\n\t";
+	bool correctAnswer = false;
+	while (!correctAnswer) {
+		std::cin >> input;
+		switch (input) {
+		case 1:
+			correctAnswer = true;
+			break;
+		case 2:
+			correctAnswer = true;
+			break;
+		case 3:
+			correctAnswer = true;
+			return 3;
+		default:
+			std::cout << "\nPlease choose a correct answer.\n\n";
+			break;
+		}
+	}
+	
 	system("cls");
+	
 }
 void PrintLogic(char board[HOR][VER]) {
 	//Logica tablero
