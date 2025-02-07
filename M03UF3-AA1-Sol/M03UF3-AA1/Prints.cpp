@@ -9,20 +9,23 @@ bool PrintTitle(short input) {
 	std::cout << "  |_| |_|___|     |_| |__,|___|     |_| |___|___|\n";
 	
 	//Printear menú
-	std::cout << "\n\t[1] - Nova partida.\n\t[2] - Carregar partida.\n\t[3] - Sortir.\n\n\t";
+	std::cout << "\n\t[1] - New game.\n\t[2] - Load game.\n\t[3] - Exit.\n\n\t";
 	bool correctAnswer = false;
 	while (!correctAnswer) {
 		std::cin >> input;
 		switch (input) {
 		case 1:
 			correctAnswer = true;
+			return false;
 			break;
 		case 2:
 			correctAnswer = true;
+			return false;
 			break;
 		case 3:
 			correctAnswer = true;
-			return 3;
+			return true;
+			break;
 		default:
 			std::cout << "\nPlease choose a correct answer.\n\n";
 			break;

@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Actions.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Prints.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Actions.h" />
     <ClInclude Include="Dictionary.h" />
     <ClInclude Include="Features.h" />
     <ClInclude Include="Prints.h" />
