@@ -1,0 +1,9 @@
+﻿  Actions.cpp
+C:\Users\samco\Documents\GitHub\M03UF3-AA1-Iago-Sam\M03-UF3-AA1_SamCorchero_IagoMerida\Actions.cpp(31,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Gameover.cpp
+  Main.cpp
+C:\Users\samco\Documents\GitHub\M03UF3-AA1-Iago-Sam\M03-UF3-AA1_SamCorchero_IagoMerida\Main.cpp(6,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Prints.cpp
+  Generating Code...
+C:\Users\samco\Documents\GitHub\M03UF3-AA1-Iago-Sam\M03-UF3-AA1_SamCorchero_IagoMerida\Prints.cpp(42,1): warning C4715: 'PrintTitle': not all control paths return a value
+  M03-UF3-AA1_SamCorchero_IagoMerida.vcxproj -> C:\Users\samco\Documents\GitHub\M03UF3-AA1-Iago-Sam\M03-UF3-AA1_SamCorchero_IagoMerida\x64\Debug\M03-UF3-AA1_SamCorchero_IagoMerida.exe

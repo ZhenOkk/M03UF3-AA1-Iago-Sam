@@ -1,3 +1,0 @@
-﻿  main.cpp
-C:\Users\samco\Documents\GitHub\M03UF3-AA1-Iago-Sam\M03UF3-AA1-Sol\M03UF3-AA1\main.cpp(6,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
-LINK : fatal error LNK1168: cannot open C:\Users\samco\Documents\GitHub\M03UF3-AA1-Iago-Sam\M03UF3-AA1-Sol\x64\Debug\M03UF3-AA1.exe for writing
