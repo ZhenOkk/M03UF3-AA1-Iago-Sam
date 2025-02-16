@@ -1,6 +1,6 @@
 #pragma once
 
-bool PlaceToken(char board[HOR][VER], bool playerX);
-bool IsGameOver(char board[HOR][VER], bool playerX); 
-void SaveGame(char board[HOR][VER]);
-void LoadGame(char board[HOR][VER]);
+void PlaceToken(char board[SIZE][SIZE]);
+void PlaceTokenIA(char board[SIZE][SIZE]);
+bool SaveGame(char board[SIZE][SIZE], std::string filename);
+bool LoadGame(char board[SIZE][SIZE], std::string filename);

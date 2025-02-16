@@ -1,6 +1,7 @@
 #include "Dictionary.h"
+#include "Actions.h"
 
-bool PrintTitle(short input) {
+bool PrintTitle(char board[SIZE][SIZE], short input) {
 	system("cls");
 	//Printear título
 	std::cout << " _____ _         _____             _____         \n";
@@ -11,6 +12,7 @@ bool PrintTitle(short input) {
 	//Printear menú
 	std::cout << "\n\t[1] - New game.\n\t[2] - Load game.\n\t[3] - Exit.\n\n\t";
 	bool correctAnswer = false;
+	std::string filename;
 	while (!correctAnswer) {
 		std::cin >> input;
 		switch (input) {
@@ -19,7 +21,10 @@ bool PrintTitle(short input) {
 			return false;
 			break;
 		case 2:
-			correctAnswer = true;
+			std::cout << "\nName? -> ";
+			std::cin >> filename;
+			filename = filename + EXT;
+			correctAnswer = LoadGame(board, filename);
 			return false;
 			break;
 		case 3:
@@ -35,26 +40,26 @@ bool PrintTitle(short input) {
 	system("cls");
 	
 }
-void PrintLogic(char board[HOR][VER]) {
+void PrintLogic(char board[SIZE][SIZE]) {
 	//Logica tablero
-	for (short i = 0; i < HOR; i++) {
-		for (short j = 0; j < VER; j++) {
+	for (short i = 0; i < SIZE; i++) {
+		for (short j = 0; j < SIZE; j++) {
 			board[i][j] = BOX;
 		}
 	}
 }
 
-void PrintBoard(char board[HOR][VER]) {
+void PrintBoard(char board[SIZE][SIZE]) {
 	//Impresion Tablero
-	for (short i = 0; i < HOR; i++) {
+	for (short i = 0; i < SIZE; i++) {
 		std::cout << H_LINE;
 		std::cout << std::endl;
 		std::cout << V_LINE << ' ';
-		for (short j = 0; j < VER; j++) {
+		for (short j = 0; j < SIZE; j++) {
 				std::cout << board[i][j];
 				std::cout << ' ' << V_LINE << ' ';
 		} 
-		if (i == HOR -1) {
+		if (i == SIZE -1) {
 			std::cout << std::endl;
 			std::cout << H_LINE;
 		}
